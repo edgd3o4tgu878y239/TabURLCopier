@@ -1,0 +1,18 @@
+{
+  "name": "Tab URL Copier",
+  "description": "Copy tab URLs and titles with flexible options - current tab, current window, or all windows.",
+  "version": "2.0",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab URL Copier"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tab URL Copier</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Tab URL Copier</h1>
+        
+        <div class="section">
+            <h2 class="section-title">現在のタブ</h2>
+            <div class="button-group">
+                <button id="copyCurrentUrl" class="btn btn-primary">
+                    <span class="icon">📄</span>
+                    URL
+                </button>
+                <button id="copyCurrentTitleUrl" class="btn btn-primary">
+                    <span class="icon">📋</span>
+                    Title+URL
+                </button>
+                <button id="copyCurrentHtml" class="btn btn-primary">
+                    <span class="icon">🔗</span>
+                    HTMLタグ
+                </button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">現在のウィンドウ</h2>
+            <div class="button-group">
+                <button id="copyWindowUrls" class="btn btn-secondary">
+                    <span class="icon">🪟</span>
+                    URL
+                </button>
+                <button id="copyWindowTitleUrls" class="btn btn-secondary">
+                    <span class="icon">📑</span>
+                    Title+URL
+                </button>
+                <button id="copyWindowHtml" class="btn btn-secondary">
+                    <span class="icon">🔗</span>
+                    HTMLタグ
+                </button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">すべてのウィンドウ</h2>
+            <div class="button-group">
+                <button id="copyAllUrls" class="btn btn-accent">
+                    <span class="icon">🌐</span>
+                    URL
+                </button>
+                <button id="copyAllTitleUrls" class="btn btn-accent">
+                    <span class="icon">📚</span>
+                    Title+URL
+                </button>
+                <button id="copyAllHtml" class="btn btn-accent">
+                    <span class="icon">🔗</span>
+                    HTMLタグ
+                </button>
+            </div>
+        </div>
+
+        <div id="status" class="status hidden"></div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
